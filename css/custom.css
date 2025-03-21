@@ -289,7 +289,7 @@ font-size: 16px;
       color: white; 
       display: block;
     }
-
+    
     @media only screen and (max-width: 767px){
         .home-about .right{
         margin-bottom: 30px;
@@ -867,6 +867,47 @@ object-fit: cover;
     text-align: center;
     font-size: 14px;
 }
+
+.footer p {
+    display: block; /* Ensures it's a normal text block */
+    writing-mode: horizontal-tb; /* Ensures horizontal text */
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    width: 90%;
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 0 auto; /* Centers the text */
+}
+
+@media (max-width: 768px) { /* Adjusts for mobile */
+    .footer p {
+        font-size: 14px;
+        width: 95%;
+    }
+}
+
+@media (max-width: 458px) { /* Adjusts for mobile */
+    .footer p {
+        font-size: 14px;
+        width: 95%;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
 /* Preloader Section */
 #preloader {
     position: fixed;
